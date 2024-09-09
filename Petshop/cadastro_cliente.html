@@ -1,0 +1,58 @@
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Minha PetShop</title>
+  <!-- Importando o arquivo CSS -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<header>
+    <div class="logo">
+      <img src="img/logo.png" alt="Logo da PetShop">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="produtos.html">Produtos</a></li>
+        <li><a href="servicos.html">Serviços</a></li>
+        <li><a href="cadastro_cliente.html">Cadastro Cliente</a></li>
+        <li><a href="cadastro_pet.html">Cadastro Pet</a></li>
+        <li><a href="agendamento.html">Agendamento</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+<section class="cadastro-cliente">
+  <form action="/submit_cliente" method="POST">
+    <div >
+      <h2 >Cadastro do Cliente</h2>
+    </div>
+        
+    <!-- Nome do Cliente -->
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome" name="nome" required>
+  
+    <!-- Endereço -->
+    <label for="endereco">Endereço:</label>
+    <input type="text" id="endereco" name="endereco" required>
+  
+    <!-- Telefone -->
+    <label for="telefone">Telefone:</label>
+    <input type="tel" id="telefone" name="telefone" required>
+  
+    <!-- E-mail -->
+    <label for="email">E-mail:</label>
+    <input type="email" id="email" name="email" required>
+  
+    <!-- Botão de Envio -->
+    <button type="submit">Cadastrar</button>
+  </form>
+</section>  
+
+   <script src="js/script.js"></script>
+  <footer>
+    <p>© 2024 PetShop. Todos os direitos reservados.</p>
+    <p><a href="contato.html">Entre em contato</a></p>
+  </footer>
+  

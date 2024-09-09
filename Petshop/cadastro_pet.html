@@ -1,0 +1,69 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha PetShop</title>
+    <!-- Importando o arquivo CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  
+<header>
+    <div class="logo">
+      <img src="img/logo.png" alt="Logo da PetShop">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="produtos.html">Produtos</a></li>
+        <li><a href="servicos.html">Serviços</a></li>
+        <li><a href="cadastro_cliente.html">Cadastro Cliente</a></li>
+        <li><a href="cadastro_pet.html">Cadastro Pet</a></li>
+        <li><a href="agendamento.html">Agendamento</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <section class="cadastro-pet">
+    <h2>Cadastro de Pet</h2>
+    <form>
+      <label for="nome">Nome do Pet:</label>
+      <input type="text" id="nome" name="nome" required>
+  
+      <label for="tipo">Tipo de Pet:</label>
+      <select id="tipo" name="tipo" required>
+        <option value="">Selecione</option>
+        <option value="cao">Cão</option>
+        <option value="gato">Gato</option>
+        <option value="outro">Outro</option>
+      </select>
+  
+      <label for="raca">Raça:</label>
+      <input type="text" id="raca" name="raca">
+  
+      <label for="temperamento">Temperamento:</label>
+      <div class="radio-group">
+        <label><input type="radio" id="agressivo" name="temperamento" value="agressivo"> Agressivo</label>
+        <label><input type="radio" id="calmo" name="temperamento" value="calmo"> Calmo</label>
+        <label><input type="radio" id="brincalhao" name="temperamento" value="brincalhao"> Brincalhão</label>
+        <label><input type="radio" id="outro" name="temperamento" value="outro"> Outro</label>
+      </div>
+
+        <!-- Idade do Pet -->
+       <label for="idade">Idade (em anos):</label>
+       <input type="number" id="idade" name="idade" min="0" max="30" required><br><br>
+  
+       <!-- Peso do Pet -->
+       <label for="peso">Peso (em kg):</label>
+       <input type="number" id="peso" name="peso" step="0.1" required><br><br>
+  
+      <button type="submit">Cadastrar Pet</button>
+    </form>
+  </section>
+  
+  
+  <script src="js/script.js"></script>
+  <footer>
+    <p>© 2024 PetShop. Todos os direitos reservados.</p>
+    <p><a href="contato.html">Entre em contato</a></p>
+  </footer>
+  
